@@ -5,5 +5,7 @@ def delete():
     name=input("Enter name of file you want to delete")
     path_loc=os.path.join(path,name)
 
-    os.remove(path_loc)
+    os.rmdir(path_loc)
     print('ok')
+
+delete()
