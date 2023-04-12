@@ -1,13 +1,15 @@
 import os
+loc=input("ENter location")
+foldername=input("Enter name of folder")
 
-def hide_folder():
-    path="/home/vboxuser/Desktop"
-    name=input("Enter name you want to hide")
-    name2='.'+name
-    path_name=os.path.join(path,name)
-    hide_name=os.path.join(path,name2)
+def hide_folder(path,foldername):
+    """
 
-    os.rename(path_name,hide_name)
+    """
+    folderpath=os.path.join(path,foldername)
 
-hide_folder()
+    os.rename(folderpath,os.path.join(path,"."+foldername))
+
+
+
 

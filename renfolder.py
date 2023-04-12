@@ -1,14 +1,10 @@
 import os
-path='/home/vboxuser/Desktop/new-folder/assesment'
-original=input("Enter the name of folder")
-folder_path=os.path.join(path,original)
-new_name=input('Enter a new name of folder')
-new_path=os.path.join(path,new_name)
 
 
-def renamefolder(): 
+
+def renamefolder(old_path,new_path): 
     try:
-        os.rename(folder_path,new_path)
+        os.rename(old_path,new_path)
         print("renamed sucess")
 
     

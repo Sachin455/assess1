@@ -9,4 +9,5 @@ def copy_file():
     dst=os.path.join(path,name2,name)
 
     shutil.copy(src_path,dst)
+    print('Check')
 
