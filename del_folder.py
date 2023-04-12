@@ -1,11 +1,7 @@
 import os
 
-def delete():
-    path='/home/vboxuser/Desktop/new-folder/assesment'
+def delete(path):
     name=input("Enter name of file you want to delete")
-    path_loc=os.path.join(path,name)
 
-    os.rmdir(path_loc)
+    os.rmdir(os.path.join(path,name))
     print('ok')
-
-delete()

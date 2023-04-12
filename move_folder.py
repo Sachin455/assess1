@@ -1,9 +1,9 @@
 import os
 import shutil
 
-src_path='/home/vboxuser/Desktop/new-folder/assesment/sapan'
-des_path='/home/vboxuser/Desktop/new-folder/assesment/sachin/sapan'
+def move(old_path,new_path):
 
-shutil.move(src_path,des_path)
 
-print("sucess")
+    shutil.move(old_path,new_path)
+
+    print("sucess")

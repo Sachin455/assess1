@@ -1,6 +1,4 @@
 import os
-path='/home/vboxuser/Desktop/new-folder/assesment'
-def list_dir():
-    print(os.getcwd())
+def list_dir(path):
     print(os.listdir(path))
 
